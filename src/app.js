@@ -1,12 +1,11 @@
 const path = require('path');
 const express = require('express');
 const hbs = require('hbs');
-const forecast = require('../../weather-app/utils/forecast')
-const geocode = require('../../weather-app/utils/geocode');
-const { response } = require('express');
+const forecast = require('../utils/forecast')
+const geocode = require('../utils/geocode');
 
 const app = express();
-const port = process.env.PORT || port;
+const port = process.env.PORT || 3001;
 
 // Define paths for express config.
 const staticPath = path.join(__dirname, '../public');
@@ -30,6 +29,7 @@ app.get('', (req, res) => {
 
 app.get('/help', (req, res) => {
     res.render('help', {
+        helpText: 'This is some helpful text.',
         authorName: 'Shivam Kapoor',
         title: 'Help',
     });

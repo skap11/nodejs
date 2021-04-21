@@ -4,7 +4,7 @@ const messageOne = document.querySelector('#message-1')
 const messageTwo = document.querySelector('#message-2')
 
 
-formElement.addEventListener('submit', (e) => {
+weatherForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
     messageOne.textContent = 'Loading...';
