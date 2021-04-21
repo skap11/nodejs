@@ -1,0 +1,21 @@
+img {
+    max-width: 250px;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+header a {
+    text-decoration: none;
+    color: #888888;
+}
+
+body {
+    font-family: "Arial";
+}
+
+.main-content {
+    width: 240px;
+    margin: 16px auto;
+}
